@@ -1,6 +1,7 @@
 # Form
 
-![preview](./.github/preview.png)
+![preview](https://user-images.githubusercontent.com/112582162/191140713-da1ead19-0a40-4fe4-a971-56193693b631.png)
+
 
 
 
