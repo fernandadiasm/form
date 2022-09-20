@@ -5,14 +5,14 @@
 }
 
 /* Elementos com o ID "titulo" */
-#titulo {
+#title {
     font-family: sans-serif;
     color: #380B61;
     margin-left: 7%;
 }
 
 /* Elementos com o ID "subtitulo" */
-#subtitulo {
+#subtitle {
     font-family: sans-serif;
     color: #380B61;
     margin-left: 10%;
@@ -38,6 +38,7 @@ body {
     justify-content: center;
 }
 
+
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
 input,
 select,
@@ -49,60 +50,60 @@ button {
     border-radius: 5px;
 }
 
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before,
-.grupo:after {
+/* Elementos de classe "container" nos estados das pseudoclasses "before" e "after" */
+.container:before,
+.container:after {
     display: table;
 }
 
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
+/* Elementos de classe "container" no estado da pseudoclasse "after" */
+.container:after {
     clear: both;
 }
 
-/* Elementos de classe "campo" */
-.campo {
+/* Elementos de classe "container-box" */
+.container-box {
     margin-bottom: 1em;
 }
 
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
+/* Elementos de classe "container-box" de tag <label> */
+.container-box label {
     margin-bottom: 0.2em;
     color: #59429d;
     display: block;
 }
 
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
+/* Elementos de classe "container-box" ou "container" de tag <fieldset> */
+fieldset.container .container-box {
     float: left;
     margin-right: 1em;
 }
 
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"],
-.campo input[type="email"],
-.campo select,
-.campo textarea {
+/* Elementos de classe "container-box" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.container-box input[type="text"],
+.container-box input[type="email"],
+.container-box select,
+.container-box textarea {
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     display: block;
 }
 
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
+/* Elementos de classe "container-box" de tag <select> e <option>*/
+.container-box select option {
     padding-right: 1em;
 }
 
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus,
-.campo select:focus,
-.campo textarea:focus {
+/* Elemento de classe "container-box" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.container-box input:focus,
+.container-box select:focus,
+.container-box textarea:focus {
     background: #E0E0F8;
 }
 
 /* Elemento de classe "botao" */
-.botao {
+.button {
     font-size: 1.2em;
     background: #59429d;
     border: 0;
@@ -112,21 +113,21 @@ fieldset.grupo .campo {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
+.button:hover {
     background: #CCBBFF;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
 /* Elementos de classe botão e de tag <select> */
-.botao,
+.button,
 select {
     cursor: pointer;
 }
