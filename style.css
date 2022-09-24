@@ -2,6 +2,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
 }
 
 /* Elementos com o ID "titulo" */
@@ -43,6 +46,7 @@ body {
 input,
 select,
 textarea,
+number,
 button {
     font-family: sans-serif;
     font-size: 1em;
@@ -82,8 +86,10 @@ fieldset.container .container-box {
 /* Elementos de classe "container-box" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .container-box input[type="text"],
 .container-box input[type="email"],
+.container-box input[type="number"],
 .container-box select,
-.container-box textarea {
+.container-box textarea,
+.container-box number {
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -98,7 +104,8 @@ fieldset.container .container-box {
 /* Elemento de classe "container-box" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 .container-box input:focus,
 .container-box select:focus,
-.container-box textarea:focus {
+.container-box textarea:focus,
+.container-box number:focus{
     background: #E0E0F8;
 }
 
